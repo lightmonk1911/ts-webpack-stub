@@ -1,0 +1,31 @@
+{
+  "name": "ts-learning",
+  "version": "1.0.0",
+  "description": "learning typescript",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/lightmonk1911/ts-webpck-stub.git"
+  },
+  "scripts": {
+    "test": "test",
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
+  },
+  "keywords": [
+    "typescript",
+    "learning"
+  ],
+  "author": "Igor Babenkov",
+  "license": "ISC",
+  "devDependencies": {
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^5.16.0",
+    "html-webpack-plugin": "^3.2.0",
+    "tslint": "^5.17.0",
+    "typescript": "^3.5.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.5.1"
+  }
+}

@@ -7,11 +7,12 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'Output Management'
+            template: './src/index.html'
         })
     ],
     devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        port: 9000,
     },
     output: {
         filename: 'main.js',
@@ -22,6 +23,10 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 loader: 'awesome-typescript-loader'
+            },
+            {
+                test: /\.p?css$/,
+                use: ['style-loader', 'postcss-loader']
             }
         ]
     }
